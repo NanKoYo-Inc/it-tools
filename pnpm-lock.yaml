@@ -104,6 +104,9 @@ dependencies:
   ibantools:
     specifier: ^4.3.3
     version: 4.3.3
+  image-in-browser:
+    specifier: ^3.2.0
+    version: 3.2.0
   js-base64:
     specifier: ^3.7.6
     version: 3.7.7
@@ -161,9 +164,15 @@ dependencies:
   randexp:
     specifier: ^0.5.3
     version: 0.5.3
+  roboto-base64:
+    specifier: ^0.1.2
+    version: 0.1.2
   sql-formatter:
     specifier: ^13.0.0
     version: 13.0.0
+  svg2png-wasm:
+    specifier: ^1.4.1
+    version: 1.4.1
   ua-parser-js:
     specifier: ^1.0.35
     version: 1.0.35
@@ -197,6 +206,9 @@ dependencies:
   vuedraggable:
     specifier: ^4.1.0
     version: 4.1.0(vue@3.3.4)
+  webp-converter-browser:
+    specifier: ^1.0.4
+    version: 1.0.4
   xml-formatter:
     specifier: ^3.3.2
     version: 3.3.2
@@ -2666,9 +2678,11 @@ packages:
     dependencies:
       '@tabler/icons': 3.20.0
       vue: 3.3.4
+    dev: false
 
   /@tabler/icons@3.20.0:
     resolution: {integrity: sha512-nXSeUzsCOxX/Of+kdUVQfxL9bG+ck8XCWNf9dGSpE+nhVexRwk/4HiDQDxFDysfT7vfgSut6GXnrZsU5M5dSlA==}
+    dev: false
 
   /@tiptap/core@2.1.12(@tiptap/pm@2.1.6):
     resolution: {integrity: sha512-ZGc3xrBJA9KY8kln5AYTj8y+GDrKxi7u95xIl2eccrqTY5CQeRu6HRNM1yT4mAjuSaG9jmazyjGRlQuhyxCKxQ==}
@@ -3412,7 +3426,7 @@ packages:
     dependencies:
       '@unhead/dom': 0.5.1
       '@unhead/schema': 0.5.1
-      '@vueuse/shared': 11.0.3(vue@3.3.4)
+      '@vueuse/shared': 11.1.0(vue@3.3.4)
       unhead: 0.5.1
       vue: 3.3.4
     transitivePeerDependencies:
@@ -4054,8 +4068,8 @@ packages:
       - vue
     dev: false
 
-  /@vueuse/shared@11.0.3(vue@3.3.4):
-    resolution: {integrity: sha512-0rY2m6HS5t27n/Vp5cTDsKTlNnimCqsbh/fmT2LgE+aaU42EMfXo8+bNX91W9I7DDmxfuACXMmrd7d79JxkqWA==}
+  /@vueuse/shared@11.1.0(vue@3.3.4):
+    resolution: {integrity: sha512-YUtIpY122q7osj+zsNMFAfMTubGz0sn5QzE5gPzAIiCmtt2ha3uQUY1+JPyL4gRCTsLPX82Y9brNbo/aqlA91w==}
     dependencies:
       vue-demi: 0.14.10(vue@3.3.4)
     transitivePeerDependencies:
@@ -6188,6 +6202,10 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
+  /image-in-browser@3.2.0:
+    resolution: {integrity: sha512-N2u2IEBbgBwYCZQ150f1G0RY+eDQ5AoT43BYEbg6nnjtiLqb5LZTj64t0R6AEicRNKOm80rGuleZcWOFNumR8g==}
+    dev: false
+
   /image-size@0.5.5:
     resolution: {integrity: sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==}
     engines: {node: '>=0.10.0'}
@@ -7997,6 +8015,10 @@ packages:
       glob: 7.2.3
     dev: true
 
+  /roboto-base64@0.1.2:
+    resolution: {integrity: sha512-vXOGVIresupkks/WVNy4upNA4OorZx6XbHJt5ZQaat1tHBdJxui3oI101n9XV9Yg6HWIQKeAGnQbJJaUa8mfvA==}
+    dev: false
+
   /rollup-plugin-terser@7.0.2(rollup@2.79.1):
     resolution: {integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==}
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
@@ -8236,6 +8258,7 @@ packages:
 
   /sortablejs@1.14.0:
     resolution: {integrity: sha512-pBXvQCs5/33fdN1/39pPL0NZF20LeRbLQ5jtnheIPN9JQAaufGjKdWduZn4U7wCtVuzKhmRkI0DFYHYRbB2H1w==}
+    dev: false
 
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
@@ -8450,6 +8473,10 @@ packages:
   /svg-tags@1.0.0:
     resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
     dev: true
+
+  /svg2png-wasm@1.4.1:
+    resolution: {integrity: sha512-ZFy1NtwZVAsslaTQoI+/QqX2sg0vjmgJ/jGAuLZZvYcRlndI54hLPiwLC9JzXlFBerfxN5JiS7kpEUG0mrXS3Q==}
+    dev: false
 
   /svgo@3.0.2:
     resolution: {integrity: sha512-Z706C1U2pb1+JGP48fbazf3KxHrWOsLme6Rv7imFBn5EnuanDW1GPaA/P1/dvObE670JDePC3mnj0k0B7P0jjQ==}
@@ -9369,6 +9396,7 @@ packages:
     dependencies:
       sortablejs: 1.14.0
       vue: 3.3.4
+    dev: false
 
   /vueuc@0.4.51(vue@3.3.4):
     resolution: {integrity: sha512-pLiMChM4f+W8czlIClGvGBYo656lc2Y0/mXFSCydcSmnCR1izlKPGMgiYBGjbY9FDkFG8a2HEVz7t0DNzBWbDw==}
@@ -9415,6 +9443,12 @@ packages:
     resolution: {integrity: sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==}
     engines: {node: '>=12'}
     dev: true
+
+  /webp-converter-browser@1.0.4:
+    resolution: {integrity: sha512-ZkcrrM4TyxBI7mPmE4uG6PU2MF5YXhKTtvub/ll/4ZjXM7THcms0C0tA10CwnsrLzRBC+ry/sUzwpW6vdPzA8g==}
+    dependencies:
+      '@babel/runtime': 7.23.2
+    dev: false
 
   /webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
