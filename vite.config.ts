@@ -112,5 +112,17 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
+    minify: false,
+    rollupOptions: {
+      output: {
+        format: 'es',
+        manualChunks: (id) => {
+          if (id.includes('plurimath') && id.includes('opal')) return 'plurimath-opal';
+        },
+      },
+    },
+  },
+  optimizeDeps: {
+    exclude: ['@plurimath/plurimath'],
   },
 });
